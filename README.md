@@ -123,3 +123,23 @@ Trying 9.9.9.9...
 Connected to 192.168.0.1.
 Escape character is '^]'.
 ```
+## 0x05 Report Timeline
+
+Dec 8, 2017: Vulnerabilities found.
+Jul 18, 2018: Reported to security@dlink.com.
+Jul 18, 2018: The vendor followed up and made a schedule to fix it.
+Feb 1, 2018: Reported those security issues to MITRE.
+Feb 1, 2018: MITRE provides CVE-2018-6527, CVE-2018-6528, CVE-2018-6529, CVE-2018-6530.
+Mar 1, 2018: The vendor release security announcement for customers.  
+Mar 2, 2018: I decide to make a public disclosure.
+
+## 0x06 Credits
+
+These vulnerabilities were found by Kaixiang Zhang.
+
+## 0x07 References
+
+[](ftp://ftp2.dlink.com/SECURITY_ADVISEMENTS/DIR-880L/REVA/DIR-880L_REVA_FIRMWARE_PATCH_NOTES_1.08B06_EN_WW.pdf)
+[](ftp://ftp2.dlink.com/SECURITY_ADVISEMENTS/DIR-865L/REVA/DIR-865L_REVA_FIRMWARE_PATCH_NOTES_1.10B01_EN_WW.pdf)
+[](ftp://ftp2.dlink.com/SECURITY_ADVISEMENTS/DIR-868L/REVA/DIR-868L_REVA_FIRMWARE_PATCH_NOTES_1.20B01_EN_WW.pdf)
+[](ftp://ftp2.dlink.com/SECURITY_ADVISEMENTS/DIR-860L/REVA/DIR-860L_REVA_FIRMWARE_PATCH_NOTES_1.11B01_EN_WW.pdf)
