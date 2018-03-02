@@ -147,7 +147,7 @@ These vulnerabilities were found by Kaixiang Zhang.
 
 ### DIR-880L RevA
 
-![baidu](https://baidu.com)
+![路由器的其他漏洞](https://github.com/TheBeeMan/DLink-850L-Multiple-Vulnerabilities-Analysis)迫使其开放telnet服务，但此种利用方式并不稳定，我测试时仍然无法登录到目标路由器上
 
 ![Release Notes - ftp://ftp2.dlink.com/SECURITY_ADVISEMENTS/DIR-880L/REVA/DIR-880L_REVA_FIRMWARE_PATCH_NOTES_1.08B06_EN_WW.pdf](ftp://ftp2.dlink.com/SECURITY_ADVISEMENTS/DIR-880L/REVA/DIR-880L_REVA_FIRMWARE_PATCH_NOTES_1.08B06_EN_WW.pdf)
 
